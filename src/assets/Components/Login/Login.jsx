@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useNavigate } from "react-router-dom";
 import useAuth from "../../Hook/useAuth";
 import toast from "react-hot-toast";
@@ -18,7 +19,7 @@ const Login = () => {
           setLoading(true)
           // 1. sign in user
           await signIn(email, password)
-          navigate('/')
+          navigate('/dashboard')
           toast.success('Signup Successful')
         } catch (err) {
           console.log(err)
@@ -85,6 +86,9 @@ const Login = () => {
                     </button>
                 </div>
                 </form>
+                <p className="">
+                Don't have an account? <a className="text-[#21d0ec] hover:underline" href="/signup">Signup</a>
+                </p>
               </div>
             </div>
           </div>

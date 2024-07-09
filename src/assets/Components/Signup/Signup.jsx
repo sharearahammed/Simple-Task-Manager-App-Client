@@ -157,6 +157,9 @@ const Signup = () => {
                     </button>
                   </div>
                 </form>
+                <p>
+                    Allready have an account <a className="text-[#21d0ec] hover:underline" href="/login">Login</a>
+                </p>
               </div>
             </div>
           </div>

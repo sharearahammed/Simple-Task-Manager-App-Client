@@ -1,8 +1,8 @@
 
 const Home = () => {
     return (
-        <div>
-            Home
+        <div className="h-screen flex justify-center items-center">
+            <img src="/task-management-process.png" alt="" />
         </div>
     );
 };
